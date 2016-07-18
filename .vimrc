@@ -19,7 +19,6 @@ Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-surround'
 Plugin 'ervandew/supertab'
 Plugin 'leafgarland/typescript-vim'
-Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()            " required
 filetype plugin indent on    " required

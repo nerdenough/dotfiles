@@ -18,7 +18,8 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-surround'
 Plugin 'ervandew/supertab'
-Plugin 'valloric/youcompleteme'
+Plugin 'leafgarland/typescript-vim'
+Plugin 'flazz/vim-colorschemes'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -53,6 +54,7 @@ let g:syntastic_always_populate_loc_list=1
 let g:syntastic_auto_loc_list=1
 let g:syntastic_check_on_open=1
 let g:syntastic_check_on_wq=0
+let g:syntastic_typescript_checkers = []
 let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_loc_list_height=3
 
@@ -70,7 +72,7 @@ autocmd BufNewFile,BufRead *.java set tabstop=4 shiftwidth=4
 " Syntax and theme
 syntax on
 let base16colorspace=256
-colorscheme base16-atelierforest
+colorscheme base16-grayscale-dark
 set background=dark
 
 " Transparency

@@ -71,7 +71,7 @@ autocmd BufNewFile,BufRead *.java set tabstop=4 shiftwidth=4
 " Syntax and theme
 syntax on
 let base16colorspace=256
-colorscheme base16-grayscale-dark
+colorscheme base16-atelier-forest
 set background=dark
 
 " Transparency

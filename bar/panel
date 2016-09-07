@@ -1,0 +1,3 @@
+#!/bin/bash
+
+ruby ~/workspace/dotfiles/bar/bar.rb

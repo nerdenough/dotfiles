@@ -1,4 +1,3 @@
-set nocompatible              " be iMproved, required
 filetype off                  " required
 
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -9,7 +8,6 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
-Plugin 'digitaltoad/vim-pug'
 Plugin 'scrooloose/syntastic'
 Plugin 'chriskempson/base16-vim'
 Plugin 'tpope/vim-fugitive'
@@ -18,7 +16,7 @@ Plugin 'Shougo/neocomplete.vim'
 Plugin 'nathanaelkane/vim-indent-guides'
 Plugin 'tpope/vim-surround'
 Plugin 'ervandew/supertab'
-Plugin 'leafgarland/typescript-vim'
+Plugin 'editorconfig/editorconfig-vim'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -43,6 +41,8 @@ set nowrap
 set laststatus=2
 set timeoutlen=50
 set t_Co=256
+" set listchars=tab:>·,space:·
+" set list
 
 " Syntastic
 set statusline+=%#warningmsg#
@@ -58,7 +58,7 @@ let g:syntastic_javascript_checkers = ['eslint']
 let g:syntastic_loc_list_height=3
 
 " Airline
-let g:airline_powerline_fonts=1
+let g:airline_powerline_fonts=0
 let g:airline_theme='base16'
 
 " Indent Guides
@@ -71,7 +71,7 @@ autocmd BufNewFile,BufRead *.java set tabstop=4 shiftwidth=4
 " Syntax and theme
 syntax on
 let base16colorspace=256
-colorscheme base16-atelier-forest
+colorscheme base16-bright
 set background=dark
 
 " Transparency

@@ -34,7 +34,7 @@ set mouse=
 
 " Whitespace
 set list
-set listchars=space:·
+set listchars=tab:»\ 
 hi SpecialKey ctermfg=8
 
 filetype plugin on

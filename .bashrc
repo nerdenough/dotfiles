@@ -3,31 +3,33 @@
 
 # Aliases
 alias ls='ls --color=auto'
-alias vi='vim'
+alias vim='nvim'
+alias vi='nvim'
+alias e='nvim'
 
-# Base16 Shell
-BASE16_SHELL="$HOME/workspace/dotfiles/shell/base16-duotone-dark-amethyst-syntax.sh"
-[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL
+alias ga='git add'
+alias gaa='git add -A'
+alias gs='git status'
+alias gc='git commit'
+alias gcm='git commit -m'
+alias gl='git log'
+alias gsl='git shortlog'
 
-# Node Version Manager
+alias ns='npm start'
+alias nt='npm test'
+
+# NVM
 export NVM_DIR="/home/brendan/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
-
-# Android
-PATH=$PATH:/home/brendan/.android/sdk/tools
-PATH=$PATH:/home/brendan/.android/sdk/platform-tools
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
 
 # Git
 parse_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
 }
 
-export VISUAL=vim
+# Editor
+export VISUAL=nvim
 export EDITOR="$VISUAL"
 
 # PS1
 export PS1="\[\033[31m\]\u@\h \[\033[32m\]\w\[\033[33m\]\$(parse_git_branch)\[\033[00m\] $ "
-
-# Heroku
-PATH="$PATH:/usr/local/heroku/bin"
-PATH="$PATH:/home/brendan/.config/composer"

@@ -18,6 +18,10 @@ alias gsl='git shortlog'
 alias ns='npm start'
 alias nt='npm test'
 
+alias ..='cd ..'
+alias ...='cd ../..'
+alias src='cd ~/workspace'
+
 # NVM
 export NVM_DIR="/home/brendan/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"

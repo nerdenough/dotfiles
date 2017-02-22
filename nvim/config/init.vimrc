@@ -4,6 +4,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'scrooloose/nerdtree'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'chriskempson/base16-vim'
 
 " Editing
 Plug 'scrooloose/nerdcommenter'

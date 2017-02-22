@@ -5,6 +5,7 @@ set ruler
 set number
 set nowrap
 set nostartofline
+syntax on
 
 " File switching
 set hidden

@@ -1,0 +1,38 @@
+{
+    "editor.lineHeight": 24,
+    "editor.fontSize": 14,
+    "editor.fontWeight": "600",
+    "editor.fontFamily": "Source Code Pro",
+    "editor.tabSize": 2,
+    "editor.renderWhitespace": "none",
+    "editor.renderIndentGuides": false,
+    "workbench.colorTheme": "Monokai Pro (Filter Octagon)",
+    "terminal.integrated.fontSize": 14,
+    "terminal.integrated.lineHeight": 1.6,
+    "editor.minimap.renderCharacters": false,
+    "workbench.iconTheme": "Monokai Pro (Filter Octagon) Icons",
+    "workbench.startupEditor": "newUntitledFile",
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "sublimeTextKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "alt",
+    "editor.snippetSuggestions": "top",
+    "editor.formatOnPaste": true,
+    "C_Cpp.intelliSenseEngine": "Default",
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/bin": true,
+        "**/*.o": true,
+        "**/node_modules": true
+    },
+    "C_Cpp.formatting": "Disabled",
+    "extensions.ignoreRecommendations": true,
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh"
+}
+

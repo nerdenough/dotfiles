@@ -1,1 +1,0 @@
-$HOME/.config/bar/bar.sh | lemonbar -p -f "Fira Mono-12" -f "MaterialIcons-14" -u 2 -B "#fff" -F "#d8137f" -U "#d8137f"

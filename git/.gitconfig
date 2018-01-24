@@ -1,6 +1,12 @@
 [user]
-  email = brendan@goodenough.nz
   name = Brendan Goodenough
+  email = brendan@goodenough.nz
+
+[url "git@github.com:"]
+  insteadOf = https://github.com/
 
 [url "git@github.com:"]
   insteadOf = gh:
+
+[url "git@github.com:nerdenough/"]
+  insteadOf = me:

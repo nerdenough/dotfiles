@@ -1,3 +1,3 @@
-# Dotfiles (2018 Edition)
+# Dotfiles
 
-A collection of my dotfiles for all of my day-to-day configs.
+This repository contains all of my dotfiles for my local environments.

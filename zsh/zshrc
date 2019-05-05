@@ -1,0 +1,45 @@
+export ZSH="/Users/brendan/.oh-my-zsh"
+
+CASE_SENSITIVE="true"
+ENABLE_CORRECTION="true"
+ZSH_THEME="gallifrey"
+
+plugins=(git)
+
+source $ZSH/oh-my-zsh.sh
+
+# User Config
+
+# Variables
+
+# misc
+export EDITOR='vim'
+
+# node
+export NVM_DIR="$HOME/.nvm"
+
+# go
+export GOPATH=$HOME/gospace
+export GO111MODULE=on # go modules
+
+# Aliases
+
+# zsh
+alias zshconfig="vim ~/.zshrc"
+alias reload="source ~/.zshrc"
+
+# docker
+alias dc="docker-compose"
+
+# git
+alias ga="git add"
+alias gaa="git add -A"
+alias gc="git commit"
+alias gch="git checkout"
+alias gcm="git commit -m"
+alias gs="git status"
+
+# Scripts
+
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # loads nvm bash_completion

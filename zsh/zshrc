@@ -8,38 +8,34 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
-# User Config
-
-# Variables
-
-# misc
+export LANG=en_US.UTF-8
 export EDITOR='vim'
 
-# node
-export NVM_DIR="$HOME/.nvm"
-
-# go
 export GOPATH=$HOME/gospace
-export GO111MODULE=on # go modules
+export PATH=$PATH:$GOPATH/bin
+export PATH=$PATH:/usr/local/go/bin
+export GOPRIVATE=gitlab.newnormalgroup.com/crystallize
 
-# Aliases
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-# zsh
 alias zshconfig="vim ~/.zshrc"
 alias reload="source ~/.zshrc"
 
-# docker
-alias dc="docker-compose"
-
-# git
+alias gs="git status"
 alias ga="git add"
 alias gaa="git add -A"
 alias gc="git commit"
-alias gch="git checkout"
 alias gcm="git commit -m"
-alias gs="git status"
 
-# Scripts
+alias dc="docker-compose"
 
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && . "/usr/local/opt/nvm/nvm.sh"  # loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion" ] && . "/usr/local/opt/nvm/etc/bash_completion"  # loads nvm bash_completion
+eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
+
+export PATH="$PATH:`yarn global bin`"
+
+alias tf="terraform"
+
+export PATH=$PATH:"/home/$USER/.local/bin"
+export PATH="$FLYCTL_INSTALL/bin:$PATH"

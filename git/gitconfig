@@ -10,3 +10,6 @@
 
 [url "git@github.com:nerdenough/"]
   insteadOf = me:
+
+[url "git@gitlab.com:"]
+  insteadOf = gl:

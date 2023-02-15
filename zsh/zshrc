@@ -1,5 +1,4 @@
-eval $(/home/linuxbrew/.linuxbrew/bin/brew shellenv)
-
+# zsh
 export ZSH="$HOME/.oh-my-zsh"
 
 CASE_SENSITIVE="true"
@@ -10,13 +9,20 @@ plugins=(git)
 
 source $ZSH/oh-my-zsh.sh
 
+# general
 export LANG=en_US.UTF-8
 export EDITOR='vim'
 
+# brew.sh
+eval $($HOMEBREW_PREFIX/bin/brew shellenv)
+export PATH=$PATH:"/home/$USER/.local/bin"
+
+# go
 export GOPATH=$HOME/gospace
 export PATH=$PATH:$GOPATH/bin
 export PATH=$PATH:/usr/local/go/bin
 
+# aliases
 alias zshconfig="vim ~/.zshrc"
 alias reload="source ~/.zshrc"
 
@@ -29,11 +35,11 @@ alias gcm="git commit -m"
 alias dc="docker-compose"
 alias tf="terraform"
 
-export PATH=$PATH:"/home/$USER/.local/bin"
-
+# nvm
 export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+[ -s "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" ] && \. "$HOMEBREW_PREFIX/opt/nvm/nvm.sh" # This loads nvm
+[ -s "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$HOMEBREW_PREFIX/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
 
+# cuda
 export PATH=/usr/local/cuda-11.8/bin${PATH:+:${PATH}}
 export LD_LIBRARY_PATH=/usr/local/cuda-11.8/lib${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
